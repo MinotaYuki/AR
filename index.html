@@ -13,6 +13,19 @@
   <!-- glTFに含まれたアニメーションを再生するためにaframe-extrasをロード -->
   <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v5.0.0/dist/aframe-extras.min.js"></script>
   
+<!-- planeでマスクするテスト -->
+<script>
+  AFRAME.registerComponent('plane', {
+    init: function () {
+      const material = this.el.getObject3D('mesh').material;
+
+      material.colorWrite = false;
+
+      console.log(material);
+    }
+  });
+</script>
+
   <!-- A-Frame の VR空間に AR.js を紐づける（デバッグUIを非表示） -->
    <a-scene ar embedded arjs="debugUIEnabled:false;">
     <!-- OBJ形式のCGモデルの読み込み -->
@@ -26,6 +39,15 @@
 
     <!-- マーカーを登録（プリセットされている「hiro」マーカー） -->
     <a-marker type="pattern" url="pattern-marker-test.patt">
+      <!-- planeでマスクするテストのyatu -->
+      <a-plane
+      plane
+      color="blue"
+      width="99"
+      height="1.2"
+      position="0 -1 -5"
+    ></a-plane>
+
       <a-entity 
         gltf-model="#testFloar" 
         scale="1 1 1" 
