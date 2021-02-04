@@ -13,7 +13,7 @@
   <!-- glTFに含まれたアニメーションを再生するためにaframe-extrasをロード -->
   <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v5.0.0/dist/aframe-extras.min.js"></script>
   
-<!-- planeでマスクするテスト -->
+<!-- planeでマスクするテスト 
 <script>
   AFRAME.registerComponent('plane', {
     init: function () {
@@ -24,7 +24,7 @@
       console.log(material);
     }
   });
-</script>
+</script> -->
 
   <!-- A-Frame の VR空間に AR.js を紐づける（デバッグUIを非表示） -->
    <a-scene ar embedded arjs="debugUIEnabled:false;">
@@ -43,9 +43,9 @@
       <a-plane
       plane
       color="blue"
-      scale="0.5 0.5 0.5"
-      position="0 1 0"
-      rotation="-90 0 0"
+      scale="3 1 1"
+      position="0 0 1"
+      rotation="0 0 0"
     ></a-plane>
 
       <a-entity 
