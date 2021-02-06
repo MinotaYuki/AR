@@ -117,14 +117,6 @@
     <a-marker type="pattern" url="pattern-mr1.patt">
 
       <a-entity 
-        gltf-model="#main" 
-        scale="1 1 1" 
-        position="0 0 1"
-        rotation="-120 0 0"
-        animation-mixer="alternate">
-      </a-entity>
-
-      <a-entity 
         gltf-model="#mir_man_out" 
         scale="1.5 1.5 1.5" 
         position="0 0 2"
@@ -136,13 +128,15 @@
       <a-plane 
         material="side: double"
         color="red"
-        scale="1 1 1"
+        plane
+        scale="1.1 1.1 1.1"
         rotation="90 0 0"
         position="0 0 0"
       ></a-plane>
       <a-plane 
         material="side: double"
         color="red"
+        plane
         scale="5 5 1"
         rotation="90 0 0"
         position="4.1 0 0"
@@ -150,6 +144,7 @@
       <a-plane 
         material="side: double"
         color="red"
+        plane
         scale="5 5 1"
         rotation="90 0 0"
         position="-4.1 0 0"
@@ -157,6 +152,7 @@
         <a-plane 
         material="side: double"
         color="red"
+        plane
         scale="15 5 1"
         rotation="90 0 0"
         position="0 0 4.6"
@@ -164,6 +160,7 @@
       <a-plane 
         material="side: double"
         color="red"
+        plane
         scale="15 5 1"
         rotation="90 0 0"
         position="0 0 -4.6"
@@ -177,6 +174,25 @@
         animation-mixer="alternate"
         >
       </a-entity>
+      
+    </a-marker>
+
+    <a-marker type="pattern" url="pattern-mr2.patt">
+      <a-entity 
+        gltf-model="#main" 
+        scale="1 1 1" 
+        position="0 0 1"
+        rotation="-120 0 0"
+        animation-mixer="alternate">
+      </a-entity>
+
+      <a-plane
+        material="side: double"
+        color="blue"
+        scale="1 1 1"
+        rotation="90 0 0"
+        position="0 0 0"
+      ></a-plane>
 
       <a-entity 
         gltf-model="#main" 
@@ -185,17 +201,6 @@
         rotation="-90 0 0"
         animation-mixer="alternate">
       </a-entity>
-      
-    </a-marker>
-
-    <a-marker type="pattern" url="pattern-mr2.patt">
-      <a-plane
-      material="side: double"
-      color="blue"
-      scale="1 1 1"
-      rotation="90 0 0"
-      position="0 0 0"
-      ></a-plane>
     </a-marker>
 
     <a-marker type="pattern" url="pattern-mr3.patt">
