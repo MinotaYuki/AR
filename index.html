@@ -36,6 +36,7 @@
       <a-asset-item id="mir_man_in" src="mir_man_in.glb"></a-asset-item>
       <a-asset-item id="mir_man_out" src="mir_man_out.glb"></a-asset-item>
       <a-asset-item id="main" src="main.glb"></a-asset-item>
+      <a-asset-item id="mk" src="marker.glb"></a-asset-item>
     </a-assets>
 
     <!---->
@@ -245,6 +246,14 @@
       position="0 0 0"
       rotation="90 0 0"
       ></a-ring>
+      <a-entity 
+        gltf-model="#mk" 
+        scale="1 1 1" 
+        position="0 0 0"
+        rotation="0 0 0"
+        animation-mixer="alternate"
+        >
+      </a-entity>
     </a-marker>
 
     <a-entity 
