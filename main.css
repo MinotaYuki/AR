@@ -17,6 +17,9 @@
     background-color: #fff;
     border-radius: 100%;
     animation: sk-scaleout 1.0s infinite ease-in-out;
+
+    font-size: 20%;
+    text-align: center;
   }
   /* ローディングアニメーション */
   @keyframes sk-scaleout {
