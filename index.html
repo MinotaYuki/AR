@@ -3,8 +3,6 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<!-- link rel="stylesheet" href="main.css">
-<script type="text/javascript" src="load.js"></script -->
 <title>border</title>
 </head>
 <body style="margin:0px; overflow:hidden;">
@@ -14,10 +12,6 @@
   <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
   <!-- glTFに含まれたアニメーションを再生するためにaframe-extrasをロード -->
   <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v5.0.0/dist/aframe-extras.min.js"></script>
-
-<div id="loading">
-  <div class="loader"></div>
-</div>
 
 <!-- planeでマスクするテスト -->
 <script>
@@ -33,7 +27,7 @@
 </script>
 
   <!-- A-Frame の VR空間に AR.js を紐づける（デバッグUIを非表示） -->
-  <a-scene ar embedded arjs="debugUIEnabled:false;">
+  <a-scene ar embedded arjs="debugUIEnabled:true;">
     <!-- OBJ形式のCGモデルの読み込み -->
 
     <a-assets>
