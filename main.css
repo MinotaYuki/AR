@@ -1,6 +1,7 @@
 /* ローディング画面 */
 .text{
-    font-size: 5%;
+    font-size: 20%;
+    text-align: center;
 }
 
 #loading {
