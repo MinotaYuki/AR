@@ -35,6 +35,7 @@
       <a-asset-item id="testFloar" src="testFloar.glb"></a-asset-item>
       <a-asset-item id="mir_man_in" src="mir_man_in.glb"></a-asset-item>
       <a-asset-item id="mir_man_out" src="mir_man_out.glb"></a-asset-item>
+      <a-asset-item id="main" src="main.glb"></a-asset-item>
     </a-assets>
 
     <!---->
@@ -122,33 +123,42 @@
     </a-marker>
 
     <a-marker type="pattern" url="pattern-mr1.patt">
+
+      <a-entity 
+        gltf-model="#main" 
+        scale="1 1 1" 
+        position="0 0 0"
+        rotation="0 0 0"
+        animation-mixer="alternate">
+      </a-entity>
+
       <a-plane 
-      material="side: double"
-      color="red"
-      scale="5 5 1"
-      rotation="90 0 0"
-      position="4.1 0 0"
+        material="side: double"
+        color="red"
+        scale="5 5 1"
+        rotation="90 0 0"
+        position="4.1 0 0"
       ></a-plane>
       <a-plane 
-      material="side: double"
-      color="red"
-      scale="5 5 1"
-      rotation="90 0 0"
-      position="-4.1 0 0"
+        material="side: double"
+        color="red"
+        scale="5 5 1"
+        rotation="90 0 0"
+        position="-4.1 0 0"
+      ></a-plane>
+        <a-plane 
+        material="side: double"
+        color="red"
+        scale="15 5 1"
+        rotation="90 0 0"
+        position="0 0 4.6"
       ></a-plane>
       <a-plane 
-      material="side: double"
-      color="red"
-      scale="15 5 1"
-      rotation="90 0 0"
-      position="0 0 4.6"
-      ></a-plane>
-      <a-plane 
-      material="side: double"
-      color="red"
-      scale="15 5 1"
-      rotation="90 0 0"
-      position="0 0 -4.6"
+        material="side: double"
+        color="red"
+        scale="15 5 1"
+        rotation="90 0 0"
+        position="0 0 -4.6"
       ></a-plane>
       
     </a-marker>
